@@ -23,7 +23,7 @@ TAC consists of three main components:
 
 The TAC EVM Layer is an EVM Layer1 with dPoS that is built with [CosmosSDK](https://docs.cosmos.network/) + [Ethermint](https://docs.ethermint.zone/) (built on top of [Tendermint-Core](https://docs.tendermint.com/)).
 
-The EVM execution environment is equivalent to the EVM specs for Ethereum mainnet, running a modified version of Geth 1.10 rebased to include the newly added OPCodes like Push0 and EIP-1559 for standard gasfee management or to provide sevices like debug_trace() API.
+The EVM execution environment is equivalent to the EVM specs for Ethereum mainnet, running a modified version of Geth 1.10 rebased to include the newly added OPCodes like Push0 and EIP-1559 for standard gasfee management or to provide services like debug_trace() API.
 
 This solution offer the greatest level of compatibility and reusability of existing tools and middlewares. Developers can easily connect their EVM wallets or IDE directly to the TAC EVM Layer to deploy Solidity code that does not need any re-audit.
 
@@ -35,7 +35,7 @@ The number of permissionless validators will be set before going live on mainnet
 
 Ethermint is built on Tendermint to offer same-block finality, and TAC EVM Layer comes with 3 sec. blocktime.
 
-On top of the dPoS consensus that secure the network at the next block, TAC EVM Layer opted for an additional layer of security provided by Babylon Bitcoin (re)Staking: bitcoin holders can stake their BTC in a self-custodial way on the Bitcoin Blockchain and delegate Babylon validators to verify TAC EVM blocks and sign them. If a Babylon validator double-sign a block, the Babylon protocol will slash the staked BTCs, providing assurance for a greater economical security against double-spending on the TAC EVM Layer, coming from the amount of BTC at stake for TAC. This mechanisms delay a bit the finality of TAC EVM, but provide much more solid assurances and is rewarded with TAC token inflation.
+On top of the dPoS consensus that secure the network at the next block, TAC EVM Layer opted for an additional layer of security provided by Babylon Bitcoin (re)Staking: bitcoin holders can stake their BTC in a self-custodial way on the Bitcoin Blockchain and delegate Babylon validators to verify TAC EVM blocks and sign them. If a Babylon validator double-sign a block, the Babylon protocol will slash the staked BTCs, providing assurance for greater economic security against double-spending on the TAC EVM Layer, coming from the amount of BTC at stake for TAC. This mechanisms delay a bit the finality of TAC EVM, but provide much more solid assurances and is rewarded with TAC token inflation.
 
 TAC EVM Layer, being built on Tendermint-Core, cannot allow re-orgs.
 
